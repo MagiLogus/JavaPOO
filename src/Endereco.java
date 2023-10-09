@@ -1,5 +1,5 @@
 public class Endereco {
     public String logradouro;
-    public int numero;
+    public String numero;
     public boolean endComercial;
 }
