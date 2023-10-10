@@ -132,6 +132,9 @@ public class Main {
                                 System.out.println("Digite o nome:");
                                 novaPj.nome = leitor.nextLine();
 
+                                System.out.println("Digite a razão social:");
+                                novaPj.razaoSocial = leitor.nextLine();
+
                                 System.out.println("Digite o CNPJ:");
                                 novaPj.cnpj = leitor.nextLine();
 
@@ -172,6 +175,7 @@ public class Main {
 
                                     for (PessoaJuridica cadaPj : listaPj) {
                                         System.out.println("Nome:" + cadaPj.nome);
+                                        System.out.println("Razão Social:" + cadaPj.razaoSocial);
                                         System.out.println("CNPJ:" + cadaPj.cnpj);
                                         System.out.println("Data criação:" + cadaPj.dataCriacao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
                                         System.out.println("Imposto a ser pago:" + metodoPj.CalcularImpostoPj(cadaPj.rendimento));
